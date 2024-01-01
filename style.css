@@ -1,0 +1,152 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.conteiner {
+    display: block;
+}
+@media screen and (max-width: 100px) {
+    body {
+        display: grid;  
+        grid-template-columns: 1fr 1fr 1fr;  
+        grid-template-rows: 50px 50px; 
+    }
+}
+.cabecalho {
+    height: 105px;
+    background: rgb(41, 41, 39);
+    border-bottom: 1px solid rgb(92, 92, 92)
+}
+.elementos-a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    height: 105px;
+    margin-left: 100px;
+}
+.pesquisar { 
+    height: 10px;
+    width: 300px;
+    padding: 15px;
+    margin-right: 120px;
+    background: rgba(128, 128, 128, 0.247);
+    background-image: url("Imagens(2)\\lupa.png");
+    background-repeat: no-repeat;
+    background-position: 150px;
+    background-size: 2em;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 30px;
+}
+.botoes {
+    display: inline-flex;
+}
+.botoes button {
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    border: none;
+    background: rgba(0, 0, 0, 0);
+}
+button {
+    margin-right: 40px;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition:0.3s;
+}
+button:hover {
+    border-bottom: 2px solid red;
+}
+.b1 {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.caixa2 {
+    display: inline-flex;
+    padding: 20px 0px 0px 90px;
+    flex-wrap: wrap;
+    background: rgb(3, 1, 26);
+}
+.box {
+    height: 380px;
+    width: 290px;
+    background: rgba(0, 0, 0, 0.719);
+    margin: 10px 10px 20px;
+    border: 1px solid rgb(83 82 82);
+    font-size: 10px;
+    padding: 10px;
+}
+.outdoor {
+    top: 0;
+    margin-left: 83px;
+    height: 350px;
+    width: 1266px;
+    background-image: url("Imagens(2)\\banner.png");
+    margin-bottom: 5px;
+}
+.box button {
+    display: inline-flex;
+    height: 35px;
+    width: 10px;
+    border: 2px solid rgba(146, 21, 21, 0);
+    font-weight: bold;
+    color: white;
+    margin-top: 0px;
+    margin-left: 230px;
+    align-items: center;
+}
+.box img {
+    width: 270px;
+    height: 180px;
+    margin-bottom: 10px;
+}
+.box h1 {
+    font-family: Arial, sans-serif;
+    color: rgb(217 217 217);
+    margin-bottom: 26px;
+    font-size: 18px;
+}
+.favorite-btn {
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.favorite-btn.favorited {
+    color: #ff0000;
+}
+
+.favorite-btn i.bi-heart-fill {
+    color: #ff0000;
+}
+.titulo_h1 {
+    height: 120px;
+}
+@media screen and (max-width: 767px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+}
